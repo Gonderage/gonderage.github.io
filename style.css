@@ -1,0 +1,108 @@
+body {
+  position: relative;
+}
+
+#hero-section {
+  /* padding keeps the hero text from overlapping the profile picture */
+  padding: clamp(150px, 75vh, 150px) 0;
+
+  /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/not how i thrive.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  /* go crazy go stupid go clinically insane, use a hugly unreasonable amount of decimals */
+  top: 71.5654946716486248%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  color: white;
+  text-shadow: 2px 2px black;
+  /* brute forced the gradient to start fading after the text by adding more stops of the same color. really ugly, hacky solution. i hate it; there should be a more elegant way to adjust where it transitions, but im too lazy to find it :/ */
+  background-image: linear-gradient(rgba(202, 37, 214, 0.5), rgba(202, 37, 214, 0.5), rgba(202, 37, 214, 0.5), rgba(0, 0, 0, 0));
+  border-radius: 13px;
+}
+
+#profile-img {
+  /* Change this values to work for you. */
+  margin: clamp(10px, 20vh, 125px) auto;
+
+  /* This should be an image */
+  /* HAHA. IT SHOULD BE. but it doesnt work when i also use background-image for it here, because it just messes up the hero image by making it unresponsive. ugh, now i have to spaghettify the site with an image in the html. have a border instead. */
+  /* background-image: url(img/gonedridge_but_a_floating_head.png) */
+  border: 3px solid #ca25d6;
+  border-radius: 50px;
+  overflow: hidden;
+
+  /* Change these values to work for you. */
+  height: clamp(200px, 20vh, 200px);
+  width: clamp(200px, 20vh, 200px);
+}
+
+/* Mission Section */
+#mission-section {
+  background-image: linear-gradient(#000000, hsl(296, 71%, 10%));
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#mission-section h3 {
+  text-align: center;
+  padding-top:50px;
+  padding-bottom: 25px;
+}
+
+#mission-section img {
+  margin-left: auto;
+  margin-right: auto;
+  width: clamp(300px, 38vw, 800px);
+  border: 6px double hsl(282, 72%, 20%);
+  border-radius: 10px;
+}
+
+/* Skills Section */
+
+#skills-section {
+  color: white;
+  background-image: linear-gradient(hsl(296, 71%, 10%), hsl(300, 100%, 10%));
+  padding-top:50px;
+}
+
+#skills-section h3 {
+  padding-top: 50px;
+}
+
+#skills-img {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Inspiration Section */
+
+#inspiration-section {
+  padding-top: 50px;
+  color: white;
+  background-image: linear-gradient(hsl(300, 100%, 10%), hsl(296, 71%, 10%));
+}
+
+/* Contact Section */
+
+#contact-section {
+  padding-top: 50px;
+  color: white;
+  background-image: linear-gradient(hsl(296, 71%, 10%), hsl(300, 100%, 10%));
+}

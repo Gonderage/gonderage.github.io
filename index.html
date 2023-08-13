@@ -1,7 +1,200 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Gonderage</title>
+
+  <!-- Link for boostrap from: 
+    https://getbootstrap.com/docs/5.0/getting-started/introduction -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body data-spy="scroll" data-bs-target="#navbar-spy" data-offset="-50">
+
+  <nav class="navbar navbar-expand-sm navbar-dark sticky-top" style="background-color: hsl(300, 78%, 32%);"
+    id="navbar-spy">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Gonderage</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#hero-section">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mission-section">Meet Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills-section">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#inspiration-section">Inspiration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-section">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero-section">
+    <div id="profile-img">
+      <img src="img/coolgonderage.png" alt="Gonderage's floating head." width="200" height="200">
+    </div>
+
+    <div class="hero-text">
+      <h1>Gonderage</h1>
+      <p>CG Artist / Web Dev</p>
+      <p>This site is a WIP!</p>
+    </div>
+  </section>
+
+  <section id="mission-section">
+    <h3>Meet Me!!</h3>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12 col-md-6">
+          <img src="img/spore.png"
+            alt="Abstract digital art with cyan and magenta making a noisy mess of gradients and hard edges."
+            class="img-fluid center">
+        </div>
+        <div class="col-12 col-md-6">
+          <p class="lead">As a digital artist and web developer, content creation and learning are my strongest
+            passions. Primarily, I am interested in 3D and technical art, and I do some programming on the side. My
+            software of choice is Blender and my favorite language is Python.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills-section">
+    <h3 class="text-center">Skills</h3>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Blender -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="skill-container" id="blender">
+            <div id="skills-img" class="text-center">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg"
+                alt="Blender logo." width="128" height="128" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+        <!-- Godot -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="skill-container" id="godot">
+            <div id="skills-img" class="text-center">
+              <img src="https://godotengine.org/assets/press/icon_color.svg" alt="Godot logo." width="128" height="128"
+                class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+        <!-- PaintDotNet -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="skill-container" id="PDN">
+            <div id="skills-img" class="text-center">
+              <img src="http://www.syprus.com/paintnet/PaintDotNet_3.png" alt="Paint Dot Net logo." width="128"
+                height="128" class="img-fluid center">
+            </div>
+          </div>
+        </div>
+
+        <!-- Python -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="skill-container" id="python">
+            <div id="skills-img" class="text-center">
+              <img
+                src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg"
+                alt="Python logo." width="128" height="128">
+            </div>
+          </div>
+        </div>
+
+        <!-- C# -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="skill-container" id="csharp">
+            <div id="skills-img" class="text-center">
+              <img
+                src="https://raw.githubusercontent.com/dotnet/docs/cb475ed45f881e9462e34764480d3b0ebce85e91/docs/images/hub/csharp.svg"
+                alt="C# logo." width="128" height="128">
+            </div>
+          </div>
+        </div>
+
+        <!-- HTML -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="skill-container" id="html">
+            <div id="skills-img" class="text-center">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                alt="HTML5 logo." width="128" height="128">
+            </div>
+          </div>
+        </div>
+
+        <!-- CSS -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="skill-container" id="css">
+            <div id="skills-img" class="text-center">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS logo."
+                width="128" height="128" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+        <!-- Django -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="skill-container" id="django">
+            <div id="skills-img" class="text-center">
+              <img src="https://www.djangoproject.com/m/img/logos/django-logo-negative.svg" alt="Django logo."
+                width="128" height="128" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+        <!-- Svelte -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="skill-container" id="svelte">
+            <div id="skills-img" class="text-center">
+              <img
+                src="https://raw.githubusercontent.com/sveltejs/branding/ab67af031f2cf3c680431506a4e1ba24f7968d4d/svelte-logo.svg"
+                alt="Svelte logo." width="128" height="128" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-section">
+    <h3>Contact Section</h3>
+
+    <!-- See https://icons.getbootstrap.com/ -->
+    <i class="bi bi-twitter"></i>
+    <i class="bi bi-discord"></i>
+  </section>
+
+
+  <!-- Bootstrap Javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
